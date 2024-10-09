@@ -8,7 +8,7 @@
 
 </head>
 <body>
-     <form class="form-content  mx-0">
+     <form class="form-content  mx-0" >
           <div class="row-item">
                <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">اسم المحطة   <span class="start-form">*</span></label>
@@ -237,6 +237,7 @@
 
 
     function generatePumpRows() {
+     event.preventDefault();
         const pumpNumber = document.getElementById('pumpNumber').value;
         const tableBody = document.getElementById('pumpTableBody');
         const templateRow = document.getElementById('templateRow').outerHTML; // Get the first row template
@@ -252,6 +253,7 @@
             tableBody.insertAdjacentHTML('beforeend', newRow);
         }
     }
+   
       </script>
      
 </body>
