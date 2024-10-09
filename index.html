@@ -8,7 +8,7 @@
 
 </head>
 <body>
-     <form class="form-content  mx-0" >
+     <form class="form-content  mx-0" onsubmit="handleSubmit(event)">
           <div class="row-item">
                <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">اسم المحطة   <span class="start-form">*</span></label>
@@ -232,32 +232,40 @@
      </form>
      <script src="./jquery.js"></script>
      <script>
-
+          function generatePumpRows() {
+              const pumpNumber = document.getElementById('pumpNumber').value;
+              const tableBody = document.getElementById('pumpTableBody');
+              
+              // تنظيف الصفوف السابقة
+              tableBody.innerHTML = '';
+      
+              // إنشاء صفوف جديدة حسب عدد المضخات
+              for (let i = 1; i <= pumpNumber; i++) {
+                  const newRow = `
+                      <tr>
+                          <td>${i}</td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><input type="text" class="form-control"></td>
+                      </tr>`;
+                  
+                  tableBody.insertAdjacentHTML('beforeend', newRow);
+              }
+          }
+          // منع إعادة تحميل الصفحة عند الضغط على أي زر submit
+     document.querySelector('form').addEventListener('submit', function(event) {
+         event.preventDefault();
+     });
     
-
-
-    function generatePumpRows() {
-     event.preventDefault();
-        const pumpNumber = document.getElementById('pumpNumber').value;
-        const tableBody = document.getElementById('pumpTableBody');
-        const templateRow = document.getElementById('templateRow').outerHTML; // Get the first row template
-
-        // Remove all rows except the template row
-        const rowsToKeep = Array.from(tableBody.rows).filter(row => row.id === 'templateRow');
-        tableBody.innerHTML = ''; // Clear the table body
-        tableBody.appendChild(rowsToKeep[0]); // Re-add the template row
-
-        // Now duplicate the template row as needed
-        for (let i = 1; i <= pumpNumber; i++) {
-            const newRow = templateRow.replace(/1/g, i); // Replace '1' with the pump number
-            tableBody.insertAdjacentHTML('beforeend', newRow);
-        }
-    }
-    // منع إعادة تحميل الصفحة عند الضغط على أي زر submit
-    document.querySelector('form').addEventListener('submit', function(event) {
-        event.preventDefault();
-    });
       </script>
+     
+
      
 </body>
 </html>
