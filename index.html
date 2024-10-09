@@ -253,7 +253,10 @@
             tableBody.insertAdjacentHTML('beforeend', newRow);
         }
     }
-   
+    // منع إعادة تحميل الصفحة عند الضغط على أي زر submit
+    document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault();
+    });
       </script>
      
 </body>
