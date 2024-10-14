@@ -30,7 +30,7 @@
  }
  
  thead th {
-     background-color: #2196f347;
+    background-color: rgb(168 170 174 / 31%);
      font-weight: bold;
  }
  
@@ -76,11 +76,7 @@
          border: 1px solid #ccc; /* حدود واضحة للطباعة */
      }
  
-     thead th {
-         background-color: #2196f347;
-         font-weight: bold;
-     }
- 
+   
      
  
      td[colspan]
@@ -244,13 +240,19 @@
             border: 1px dashed rgb(192, 192, 192); /* حدود على الـ span */
 }
 .red-th{
-    background-color: #f44336;
+    background-color: rgb(234, 84, 85);
 }
 .gren-th{
-background-color: #8bc34a;
+background-color: rgb(40, 199, 111);
+}
+.orang-th{
+    background-color: rgb(255, 159, 67);
 }
 .tr-footer{
-    background-color: #2196f347;
+    background-color: rgba(0, 209, 232, 0.159);
+}
+.bg-white{
+    background-color: #fff;
 }
 
 
