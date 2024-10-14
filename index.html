@@ -11,45 +11,46 @@
 
 <body>
      <div class="container">
-          <form class="form-content  mx-0" onsubmit="handleSubmit(event)">
+          <form class="form-content  mx-0">
                <div class="row-item-hadeer">
                     <div class="mb-3">
                          <label for="exampleFormControlInput1" class="form-label">اسم المحطة <span
                                    class="start-form">*</span></label>
-                         <input type="text" class="form-control" id="exampleFormControlInput1"
-                              placeholder="اسم المحطة   ">
+                         <select class="form-control select2">
+                              <option>1</option>
+                              <option>1</option>
+                              <option>1</option>
+                         </select>
                     </div>
                     <div class="mb-3">
                          <label for="example-dete" class="form-label"> تاريخ <span class="start-form">*</span></label>
                          <input type="date" class="form-control" id="example-dete">
                     </div>
                     <div class="mb-3">
-                         <label for="example-dete" class="form-label"> الوقت <span class="start-form">*</span></label>
-                         <input type="datetime" class="form-control" id="example-dete">
+                         <label for="example-dete" class="form-label"> من وقت <span class="start-form">*</span></label>
+                         <input type="time" class="form-control" id="example-dete">
                     </div>
-
+                    <div class="mb-3">
+                         <label for="example-dete" class="form-label"> الى وقت <span class="start-form">*</span></label>
+                         <input type="time" class="form-control" id="example-dete">
+                    </div>
                </div>
-               <div class="row-item-fieldset">
+               <div class="row-item-fieldset-list">
 
-                    <fieldset class="form-fieldset">
-                         <legend> pump</legend>
+                   
+                    <fieldset class="form-fieldset-top">
+                          <legend>
+                              <span class="legend-title">pump</span>
 
-                         <div class="row-item-pump">1</div>
-                         <div class="row-item-pump">2</div>
-                         <div class="row-item-pump">3</div>
-                         <div class="row-item-pump">4</div>
-                         <div class="row-item-pump">5</div>
-                         <div class="row-item-pump">6</div>
-                         <div class="row-item-pump">7</div>
-                         <div class="row-item-pump">8</div>
-                         <div class="row-item-pump">9</div>
-                         <div class="row-item-pump">10</div>
-                         <div class="row-item-pump">11</div>
-                         <div class="row-item-pump">12</div>
-                    </fieldset>
-                    <fieldset class="form-fieldset">
-                         <legend>ديزل -D</legend>
+                              <span class="legend-title"> ديزل -D</span>
+                              <span class="legend-title"> بنزين91 - Petrol 91</span>
+                              <span class="legend-title"> بنزين 95 - petrol 95</span>
+                          </legend>
+                         
                          <div class="row-item">
+                              <div class="row-item-pump">
+                                   1
+                              </div>
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-close"
                                         placeholder=" اقفال-close   ">
@@ -60,9 +61,6 @@
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
                               </div>
-
-                         </div>
-                         <div class="row-item">
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-close"
                                         placeholder=" اقفال-close   ">
@@ -73,10 +71,6 @@
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
                               </div>
-
-                         </div>
-
-                         <div class="row-item">
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-close"
                                         placeholder=" اقفال-close   ">
@@ -87,9 +81,11 @@
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
                               </div>
-
                          </div>
                          <div class="row-item">
+                              <div class="row-item-pump">
+                                   2
+                              </div>
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-close"
                                         placeholder=" اقفال-close   ">
@@ -100,9 +96,6 @@
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
                               </div>
-
-                         </div>
-                         <div class="row-item">
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-close"
                                         placeholder=" اقفال-close   ">
@@ -113,10 +106,6 @@
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
                               </div>
-
-                         </div>
-
-                         <div class="row-item">
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-close"
                                         placeholder=" اقفال-close   ">
@@ -127,9 +116,11 @@
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
                               </div>
-
                          </div>
                          <div class="row-item">
+                              <div class="row-item-pump">
+                                   3
+                              </div>
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-close"
                                         placeholder=" اقفال-close   ">
@@ -140,9 +131,6 @@
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
                               </div>
-
-                         </div>
-                         <div class="row-item">
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-close"
                                         placeholder=" اقفال-close   ">
@@ -153,10 +141,6 @@
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
                               </div>
-
-                         </div>
-
-                         <div class="row-item">
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-close"
                                         placeholder=" اقفال-close   ">
@@ -167,9 +151,11 @@
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
                               </div>
-
                          </div>
                          <div class="row-item">
+                              <div class="row-item-pump">
+                                   4
+                              </div>
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-close"
                                         placeholder=" اقفال-close   ">
@@ -180,9 +166,6 @@
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
                               </div>
-
-                         </div>
-                         <div class="row-item">
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-close"
                                         placeholder=" اقفال-close   ">
@@ -193,10 +176,6 @@
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
                               </div>
-
-                         </div>
-
-                         <div class="row-item">
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-close"
                                         placeholder=" اقفال-close   ">
@@ -207,30 +186,11 @@
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
                               </div>
-
                          </div>
-                         <div class="footer-fieldset">
-                              <div class="mb-3">
-                                   <label for="exampleForm-totel" class="form-label"> الاجمالى <span class="start-form">*</span></label>
-                                   <input type="text" class="form-control" id="exampleForm-totel">
-                              </div>
-                              <div class="mb-3">
-                                   <label for="exampleForm-deceint" class="form-label"> يخصم لترات الفحص	<span class="start-form">*</span></label>
-                                   <input type="text" class="form-control" id="exampleForm-deceint" >
-                              </div>
-                              <div class="mb-3">
-                                   <label for="exampleForm-prices" class="form-label"> سعر اللتر	<span class="start-form">*</span></label>
-                                   <input type="text" class="form-control" id="exampleForm-prices">
-                              </div>
-                              <div class="mb-3">
-                                   <label for="exampleForm-prices" class="form-label">  اجمالى مبيعات ديزل	<span class="start-form">*</span></label>
-                                   <input type="text" class="form-control" id="exampleForm-prices">
-                              </div>
-                         </div>
-                    </fieldset>
-                    <fieldset class="form-fieldset">
-                         <legend> بنزين91 - Petrol 91</legend>
                          <div class="row-item">
+                              <div class="row-item-pump">
+                                   5
+                              </div>
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-close"
                                         placeholder=" اقفال-close   ">
@@ -241,9 +201,6 @@
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
                               </div>
-
-                         </div>
-                         <div class="row-item">
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-close"
                                         placeholder=" اقفال-close   ">
@@ -254,10 +211,6 @@
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
                               </div>
-
-                         </div>
-
-                         <div class="row-item">
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-close"
                                         placeholder=" اقفال-close   ">
@@ -268,9 +221,11 @@
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
                               </div>
-
                          </div>
                          <div class="row-item">
+                              <div class="row-item-pump">
+                                   6
+                              </div>
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-close"
                                         placeholder=" اقفال-close   ">
@@ -281,9 +236,6 @@
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
                               </div>
-
-                         </div>
-                         <div class="row-item">
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-close"
                                         placeholder=" اقفال-close   ">
@@ -294,10 +246,6 @@
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
                               </div>
-
-                         </div>
-
-                         <div class="row-item">
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-close"
                                         placeholder=" اقفال-close   ">
@@ -308,9 +256,11 @@
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
                               </div>
-
                          </div>
                          <div class="row-item">
+                              <div class="row-item-pump">
+                                   7
+                              </div>
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-close"
                                         placeholder=" اقفال-close   ">
@@ -321,9 +271,6 @@
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
                               </div>
-
-                         </div>
-                         <div class="row-item">
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-close"
                                         placeholder=" اقفال-close   ">
@@ -334,10 +281,6 @@
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
                               </div>
-
-                         </div>
-
-                         <div class="row-item">
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-close"
                                         placeholder=" اقفال-close   ">
@@ -348,9 +291,11 @@
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
                               </div>
-
                          </div>
                          <div class="row-item">
+                              <div class="row-item-pump">
+                                   8
+                              </div>
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-close"
                                         placeholder=" اقفال-close   ">
@@ -361,9 +306,6 @@
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
                               </div>
-
-                         </div>
-                         <div class="row-item">
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-close"
                                         placeholder=" اقفال-close   ">
@@ -374,10 +316,6 @@
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
                               </div>
-
-                         </div>
-
-                         <div class="row-item">
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-close"
                                         placeholder=" اقفال-close   ">
@@ -388,216 +326,216 @@
                               <div class="mb-3">
                                    <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
                               </div>
-
                          </div>
-                         <div class="footer-fieldset">
-                              <div class="mb-3">
-                                   <label for="exampleForm-totel" class="form-label"> الاجمالى <span class="start-form">*</span></label>
-                                   <input type="text" class="form-control" id="exampleForm-totel">
+                         <div class="row-item">
+                              <div class="row-item-pump">
+                                   9
                               </div>
                               <div class="mb-3">
-                                   <label for="exampleForm-deceint" class="form-label"> يخصم لترات الفحص	<span class="start-form">*</span></label>
-                                   <input type="text" class="form-control" id="exampleForm-deceint" >
+                                   <input type="text" class="form-control" id="form-close"
+                                        placeholder=" اقفال-close   ">
                               </div>
                               <div class="mb-3">
-                                   <label for="exampleForm-prices" class="form-label"> سعر اللتر	<span class="start-form">*</span></label>
-                                   <input type="text" class="form-control" id="exampleForm-prices">
+                                   <input type="text" class="form-control" id="form-open" placeholder="افتتاحى - open ">
                               </div>
                               <div class="mb-3">
-                                   <label for="exampleForm-prices" class="form-label">  اجمالى مبيعات91	<span class="start-form">*</span></label>
-                                   <input type="text" class="form-control" id="exampleForm-prices">
+                                   <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
+                              </div>
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-close"
+                                        placeholder=" اقفال-close   ">
+                              </div>
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-open" placeholder="افتتاحى - open ">
+                              </div>
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
+                              </div>
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-close"
+                                        placeholder=" اقفال-close   ">
+                              </div>
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-open" placeholder="افتتاحى - open ">
+                              </div>
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
                               </div>
                          </div>
-                    </fieldset>
-                    <fieldset class="form-fieldset">
-                         <legend>بنزين 95 - petrol 95</legend>
-                         <div>
-                              <div class="row-item">
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-close"
-                                             placeholder=" اقفال-close   ">
-                                   </div>
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-open" placeholder="افتتاحى - open ">
-                                   </div>
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
-                                   </div>
-     
+                         <div class="row-item">
+                              <div class="row-item-pump">
+                                   10
                               </div>
-                              <div class="row-item">
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-close"
-                                             placeholder=" اقفال-close   ">
-                                   </div>
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-open" placeholder="افتتاحى - open ">
-                                   </div>
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
-                                   </div>
-     
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-close"
+                                        placeholder=" اقفال-close   ">
                               </div>
-     
-                              <div class="row-item">
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-close"
-                                             placeholder=" اقفال-close   ">
-                                   </div>
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-open" placeholder="افتتاحى - open ">
-                                   </div>
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
-                                   </div>
-     
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-open" placeholder="افتتاحى - open ">
                               </div>
-                              <div class="row-item">
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-close"
-                                             placeholder=" اقفال-close   ">
-                                   </div>
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-open" placeholder="افتتاحى - open ">
-                                   </div>
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
-                                   </div>
-     
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
                               </div>
-                              <div class="row-item">
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-close"
-                                             placeholder=" اقفال-close   ">
-                                   </div>
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-open" placeholder="افتتاحى - open ">
-                                   </div>
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
-                                   </div>
-     
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-close"
+                                        placeholder=" اقفال-close   ">
                               </div>
-     
-                              <div class="row-item">
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-close"
-                                             placeholder=" اقفال-close   ">
-                                   </div>
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-open" placeholder="افتتاحى - open ">
-                                   </div>
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
-                                   </div>
-     
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-open" placeholder="افتتاحى - open ">
                               </div>
-                              <div class="row-item">
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-close"
-                                             placeholder=" اقفال-close   ">
-                                   </div>
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-open" placeholder="افتتاحى - open ">
-                                   </div>
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
-                                   </div>
-     
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
                               </div>
-                              <div class="row-item">
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-close"
-                                             placeholder=" اقفال-close   ">
-                                   </div>
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-open" placeholder="افتتاحى - open ">
-                                   </div>
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
-                                   </div>
-     
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-close"
+                                        placeholder=" اقفال-close   ">
                               </div>
-     
-                              <div class="row-item">
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-close"
-                                             placeholder=" اقفال-close   ">
-                                   </div>
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-open" placeholder="افتتاحى - open ">
-                                   </div>
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
-                                   </div>
-     
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-open" placeholder="افتتاحى - open ">
                               </div>
-                              <div class="row-item">
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-close"
-                                             placeholder=" اقفال-close   ">
-                                   </div>
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-open" placeholder="افتتاحى - open ">
-                                   </div>
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
-                                   </div>
-     
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
                               </div>
-                              <div class="row-item">
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-close"
-                                             placeholder=" اقفال-close   ">
-                                   </div>
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-open" placeholder="افتتاحى - open ">
-                                   </div>
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
-                                   </div>
-     
+                         </div>
+                         <div class="row-item">
+                              <div class="row-item-pump">
+                                   11
                               </div>
-     
-                              <div class="row-item">
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-close"
-                                             placeholder=" اقفال-close   ">
-                                   </div>
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-open" placeholder="افتتاحى - open ">
-                                   </div>
-                                   <div class="mb-3">
-                                        <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
-                                   </div>
-     
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-close"
+                                        placeholder=" اقفال-close   ">
+                              </div>
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-open" placeholder="افتتاحى - open ">
+                              </div>
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
+                              </div>
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-close"
+                                        placeholder=" اقفال-close   ">
+                              </div>
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-open" placeholder="افتتاحى - open ">
+                              </div>
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
+                              </div>
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-close"
+                                        placeholder=" اقفال-close   ">
+                              </div>
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-open" placeholder="افتتاحى - open ">
+                              </div>
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
+                              </div>
+                         </div>
+                         <div class="row-item">
+                              <div class="row-item-pump">
+                                   12
+                              </div>
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-close"
+                                        placeholder=" اقفال-close   ">
+                              </div>
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-open" placeholder="افتتاحى - open ">
+                              </div>
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
+                              </div>
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-close"
+                                        placeholder=" اقفال-close   ">
+                              </div>
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-open" placeholder="افتتاحى - open ">
+                              </div>
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
+                              </div>
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-close"
+                                        placeholder=" اقفال-close   ">
+                              </div>
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-open" placeholder="افتتاحى - open ">
+                              </div>
+                              <div class="mb-3">
+                                   <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
                               </div>
                          </div>
                          <div class="footer-fieldset">
-                              <div class="mb-3">
-                                   <label for="exampleForm-totel" class="form-label"> الاجمالى <span class="start-form">*</span></label>
-                                   <input type="text" class="form-control" id="exampleForm-totel">
+                              <div class="row-footer-fieldset">
+                                   <div class="mb-3"></div>
+                                   <div class="mb-3">
+                                        <label for="exampleForm-totel" class="form-label"> الاجمالى <span class="start-form">*</span></label>
+                                        <input type="text" class="form-control" id="exampleForm-totel">
+                                   </div>
+                                   <div class="mb-3">
+                                        <label for="exampleForm-totel" class="form-label"> الاجمالى <span class="start-form">*</span></label>
+                                        <input type="text" class="form-control" id="exampleForm-totel">
+                                   </div>
+                                   <div class="mb-3">
+                                        <label for="exampleForm-totel" class="form-label"> الاجمالى <span class="start-form">*</span></label>
+                                        <input type="text" class="form-control" id="exampleForm-totel">
+                                   </div>
                               </div>
-                              <div class="mb-3">
-                                   <label for="exampleForm-deceint" class="form-label"> يخصم لترات الفحص	<span class="start-form">*</span></label>
-                                   <input type="text" class="form-control" id="exampleForm-deceint" >
+                              <div class="row-footer-fieldset">
+                                   <div class="mb-3"></div>
+                                   <div class="mb-3">
+                                        <label for="exampleForm-deceint" class="form-label"> يخصم لترات الفحص	<span class="start-form">*</span></label>
+                                        <input type="text" class="form-control" id="exampleForm-deceint" >
+                                   </div>
+                                   <div class="mb-3">
+                                        <label for="exampleForm-deceint" class="form-label"> يخصم لترات الفحص	<span class="start-form">*</span></label>
+                                        <input type="text" class="form-control" id="exampleForm-deceint" >
+                                   </div>
+                                   <div class="mb-3">
+                                        <label for="exampleForm-deceint" class="form-label"> يخصم لترات الفحص	<span class="start-form">*</span></label>
+                                        <input type="text" class="form-control" id="exampleForm-deceint" >
+                                   </div>
                               </div>
-                              <div class="mb-3">
-                                   <label for="exampleForm-prices" class="form-label"> سعر اللتر	<span class="start-form">*</span></label>
-                                   <input type="text" class="form-control" id="exampleForm-prices">
+                              <div class="row-footer-fieldset">
+                                   <div class="mb-3"></div>
+                                   <div class="mb-3">
+                                        <label for="exampleForm-prices" class="form-label"> سعر اللتر	<span class="start-form">*</span></label>
+                                        <input type="text" class="form-control" id="exampleForm-prices">
+                                   </div>
+                                   <div class="mb-3">
+                                        <label for="exampleForm-prices" class="form-label"> سعر اللتر	<span class="start-form">*</span></label>
+                                        <input type="text" class="form-control" id="exampleForm-prices">
+                                   </div>
+                                   <div class="mb-3">
+                                        <label for="exampleForm-prices" class="form-label"> سعر اللتر	<span class="start-form">*</span></label>
+                                        <input type="text" class="form-control" id="exampleForm-prices">
+                                   </div>
                               </div>
-                              <div class="mb-3">
-                                   <label for="exampleForm-prices" class="form-label">  اجمالى مبيعات95	<span class="start-form">*</span></label>
-                                   <input type="text" class="form-control" id="exampleForm-prices">
+                              <div class="row-footer-fieldset">
+                                   <div class="mb-3"></div>
+                                   <div class="mb-3">
+                                        <label for="exampleForm-prices" class="form-label">  اجمالى مبيعات ديزل	<span class="start-form">*</span></label>
+                                        <input type="text" class="form-control" id="exampleForm-prices">
+                                   </div>
+                                   <div class="mb-3">
+                                        <label for="exampleForm-prices" class="form-label">  اجمالى مبيعات 91	<span class="start-form">*</span></label>
+                                        <input type="text" class="form-control" id="exampleForm-prices">
+                                   </div>
+                                   <div class="mb-3">
+                                        <label for="exampleForm-prices" class="form-label">  اجمالى مبيعات 95	<span class="start-form">*</span></label>
+                                        <input type="text" class="form-control" id="exampleForm-prices">
+                                   </div>
                               </div>
                          </div>
-                       
+                         <div class="d-flex d-total">
+                              الاجمالى العام 91+95+ديزل	
+                              <span>12000</span>			
+          
+                         </div>
                     </fieldset>
-               </div>
-               <div class="d-flex d-total">
-                    الاجمالى العام 91+95+ديزل	
-                    <span>12000</span>			
-
+                    
                </div>
                <div class="row-item-fieldset-buttom">
                     <fieldset class="form-fieldset">

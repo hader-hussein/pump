@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="ltr">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +7,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body onpageshow="window.print()" onafterprint="history.go(-1);">
-    <div class="top-title">
-        <h1 class="text-right"> شركة  فلل للوقود </h1>
+    <div class="top-title d-flex">
+        <div>
+            <h1 class="text-h1">  Fuel Company</h1>
+            <div> 
+                Station name: Dammam - Riyadh Road					
+            </div>
+
+        </div>
+        <div>
+            <h1 class="text-h1"> شركة  فلل للوقود </h1>
+            <div>اسم المحطة  :  طريق الدمام - الرياض						
+            </div>
+        </div>
+       
     </div>
     <div class="table-container">
         <table>
-          <caption>
-               اسم المحطة:نجران
-          </caption>
+         
             <thead>
                <tr>
                     <th colspan="4" class="dete">اليوم</th>
@@ -34,9 +44,9 @@
                 </tr>
                 <tr>
                     <th >pump</th>
-                    <th colspan="3">ديزل -D</th>
-                    <th colspan="3"> بنزين91 - Petrol 91</th>
-                    <th colspan="3">بنزين 95 - petrol 95</th>
+                    <th colspan="3" class="red-th">ديزل -D</th>
+                    <th colspan="3" class="gren-th"> بنزين91 - Petrol 91</th>
+                    <th colspan="3" class="red-th">بنزين 95 - petrol 95</th>
                 </tr>
                 <tr>
                     <th></th>
@@ -222,7 +232,7 @@
                     
                 </tr>
                 <!-- Add more rows as needed -->
-                <tr>
+                <tr class="tr-footer">
                     <td>الاجمالى</td>
                     <td></td>
                     <td></td>
@@ -234,7 +244,7 @@
                     <td></td>
                     <td>0</td>
                 </tr>
-                <tr>
+                <tr class="tr-footer">
                     <td></td>
                     <td colspan="2"> يخصم لترات الفحص</td>
                     <td></td>
@@ -243,7 +253,7 @@
                     <td colspan="2"> يخصم لترات الفحص</td>
                     <td></td>
                 </tr>
-                <tr>
+                <tr class="tr-footer">
                     <td></td>
                     <td colspan="2">   سعر اللتر</td>
                     <td>1.15</td>
@@ -252,7 +262,7 @@
                     <td colspan="2">   سعر اللتر</td>
                     <td>2.33</td>
                 </tr>
-                <tr>
+                <tr class="tr-footer">
                     <td></td>
                     <td colspan="2">    اجمالى المبيعات ريال -ديزل</td>
                     <td>826.85</td>
@@ -261,7 +271,7 @@
                     <td colspan="2">    اجمالى المبيعات  ريال 95</td>
                     <td>0</td>
                 </tr>
-                <tr>
+                <tr class="tr-footer">
                     <td colspan="10"> الاجمالى العام 91+95-ديزل</td>
                 </tr>
             </tbody>
@@ -269,102 +279,103 @@
             <thead>
                 <tr>
                     <th ></th>
-                    <th colspan="3">ديزل -D</th>
-                    <th colspan="3"> بنزين91 - Petrol 91</th>
-                    <th colspan="3">بنزين 95 - petrol 95</th>
+                    
+                    <th colspan="3" class="red-th">ديزل -D</th>
+                    <th colspan="3" class="gren-th"> بنزين91 - Petrol 91</th>
+                    <th colspan="3" class="red-th">بنزين 95 - petrol 95</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td></td>
-                    <td>stores before</td>
+                    <td class="tr-footer">stores before</td>
                     <td>0</td>
-                    <td>المخزون السابق</td>
-                    <td>stores before</td>
+                    <td class="tr-footer">المخزون السابق</td>
+                    <td class="tr-footer">stores before</td>
                     <td>0</td>
-                    <td>المخزون السابق</td>
-                    <td>stores before</td>
+                    <td class="tr-footer">المخزون السابق</td>
+                    <td class="tr-footer">stores before</td>
                     <td>0</td>
-                    <td>المخزون السابق</td>
+                    <td class="tr-footer">المخزون السابق</td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td>received today </td>
+                    <td class="tr-footer">received today </td>
                     <td>0</td>
-                    <td> المستلم</td>
-                    <td> received today</td>
+                    <td class="tr-footer"> المستلم</td>
+                    <td class="tr-footer"> received today</td>
+                    <td >0</td>
+                    <td class="tr-footer"> المستلم</td>
+                    <td class="tr-footer">received today </td>
                     <td>0</td>
-                    <td> المستلم</td>
-                    <td>received today </td>
-                    <td>0</td>
-                    <td> المستلم</td>
+                    <td class="tr-footer"> المستلم</td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td>total </td>
+                    <td class="tr-footer">total </td>
                     <td>0</td>
-                    <td> الاجمالى</td>
-                    <td> total</td>
+                    <td class="tr-footer"> الاجمالى</td>
+                    <td class="tr-footer"> total</td>
                     <td>0</td>
-                    <td> الاجمالى</td>
-                    <td>total </td>
+                    <td class="tr-footer"> الاجمالى</td>
+                    <td class="tr-footer">total </td>
                     <td>0</td>
-                    <td> الاجمالى</td>
+                    <td class="tr-footer"> الاجمالى</td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td>sold </td>
+                    <td class="tr-footer">sold </td>
                     <td>0</td>
-                    <td> المباع لترات</td>
-                    <td> sold</td>
+                    <td class="tr-footer"> المباع لترات</td>
+                    <td class="tr-footer"> sold</td>
                     <td>0</td>
-                    <td> المباع لترات</td>
-                    <td>sold </td>
+                    <td class="tr-footer"> المباع لترات</td>
+                    <td class="tr-footer">sold </td>
                     <td>0</td>
-                    <td> المباع لترات</td>
+                    <td class="tr-footer"> المباع لترات</td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td>balance </td>
+                    <td class="tr-footer">balance </td>
                     <td>0</td>
-                    <td> الرصيد لترات</td>
-                    <td> balance</td>
+                    <td class="tr-footer"> الرصيد لترات</td>
+                    <td class="tr-footer"> balance</td>
                     <td>0</td>
-                    <td> الرصيد لترات</td>
-                    <td>balance </td>
+                    <td class="tr-footer"> الرصيد لترات</td>
+                    <td class="tr-footer">balance </td>
                     <td>0</td>
-                    <td> الرصيد لترات</td>
+                    <td class="tr-footer"> الرصيد لترات</td>
                 </tr>
                 <tr>
                     <td colspan="10"> تفاصيل الايراد -  revenu detalis</td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td colspan="2">ايراد الديزل الكاش</td>
+                    <td colspan="2" class="tr-footer">ايراد الديزل الكاش</td>
                     <td>826.85</td>
-                    <td colspan="2">ايراد الكاش 91 </td>
+                    <td colspan="2" class="tr-footer">ايراد الكاش 91 </td>
 
                     <td>458.54</td>
-                    <td colspan="2" rowspan="2">ايراد الكاش 95 </td>
+                    <td colspan="2" rowspan="2" class="tr-footer">ايراد الكاش 95 </td>
 
                     <td rowspan="2">0</td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td colspan="2">  شبكة الديزل</td>
+                    <td colspan="2" class="tr-footer">  شبكة الديزل</td>
                     <td></td>
-                    <td colspan="2">ايراد   شبكة بنك الجزيرة بنزين </td>
+                    <td colspan="2" class="tr-footer">ايراد   شبكة بنك الجزيرة بنزين </td>
 
                     <td>2055</td>
                     
                 </tr>
                 <tr>
-                    <td colspan="5"> الاجل الامارة</td>
-                    <td colspan="5">1258.39</td>
+                    <td colspan="5" class="tr-footer"> الاجل الامارة</td>
+                    <td colspan="5" >1258.39</td>
                 </tr>
                 <tr>
                     <td colspan="5">  </td>
-                    <td colspan="5">توقيع مشرف المحطة</td>
+                    <td colspan="5" class="tr-footer">توقيع مشرف المحطة</td>
                 </tr>
             </tbody>
         </table>

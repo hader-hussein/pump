@@ -9,12 +9,7 @@
     
      /* دعم الكتابة من اليمين لليسار */
  }
- caption{
-    font-size: 20px;
-    font-weight: bold;
-    padding: 5px;
-    border-top: 2px solid #cccccc;
- }
+
  .table-container {
      width: 100%;
      overflow-x: auto;
@@ -35,12 +30,8 @@
  }
  
  thead th {
-     background-color: #e9e9e9;
+     background-color: #2196f347;
      font-weight: bold;
- }
- 
- tbody tr:nth-child(even) {
-     background-color: #f9f9f9;
  }
  
  td[colspan] {
@@ -67,24 +58,13 @@
      }
  
      body {
-         margin: 0;
+         margin: 10px;
          padding: 0;
          height: 100vh; /* استخدام الارتفاع الكامل للصفحة */
       
      }
  
-     .table-container {
-         /* width: auto; */
-         /* overflow: visible; */
-         /* transform: rotate(90deg); 
-         transform-origin: left top; 
-         position: absolute;
-         top: 0; 
-         left: 100%; 
-         height: 100%;
-         width: 100%; */
-     }
- 
+   
      table {
          /* width: auto;  */
          font-size: 12px; /* تقليل حجم النص للطباعة */
@@ -93,25 +73,25 @@
  
      th, td,caption {
          padding: 2px;
-         border: 1px solid #000; /* حدود واضحة للطباعة */
+         border: 1px solid #ccc; /* حدود واضحة للطباعة */
      }
  
      thead th {
-         background-color: #e9e9e9;
+         background-color: #2196f347;
          font-weight: bold;
      }
  
-     tbody tr:nth-child(even) {
-         background-color: #fff;
-     }
+     
  
      td[colspan]
 {
      text-align: center;
 }
-     .no-print {
-         display: none; /* إخفاء العناصر غير المرغوب فيها */
-     }
+     
+ }
+ .text-h1{
+    margin: 4px 0px;
+    font-size: 25px;
  }
  /*from*/
 .form-label {
@@ -139,7 +119,7 @@
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .row-item-pump{
-    margin-bottom: 4px;
+  
     text-align: center;
     font-weight: 500;
 }
@@ -149,21 +129,31 @@
 
 .row-item-hadeer{
     display: grid;
-    grid-template-columns: 0.75fr 0.25fr 0.25fr;
+    grid-template-columns: 0.50fr 0.25fr 0.25fr 0.25fr;
     grid-gap: 10px;
 
 }
-.row,.row-item-fieldset,.row-item,.row-item-fieldset-buttom{
+.row-item-fieldset-buttom{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
 }
-.row-item-fieldset{
-    grid-template-columns:0.25fr 1fr 1fr 1fr;
-}
+
+
 .row-item{
     margin-bottom: 4px;
+    grid-template-columns: 0.75fr repeat(9, 1fr) ;
+    display: grid;
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: center;
 }
+.row-footer-fieldset{
+    display: grid;
+    grid-template-columns: 0.25fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+/*  */
 .text-center{
     text-align: center;
 }
@@ -184,7 +174,7 @@
   width: 90%;
   margin: auto;
 }
-.form-fieldset{
+.form-fieldset,.form-fieldset-top{
     margin: 10px 0px;
     border-style: dashed;
     border-width: 1px;
@@ -196,6 +186,7 @@
     border-color:rgb(192, 192, 192);
     padding: 5px;
     font-weight: bold;
+    margin-top: 5px;
 }
 .d-Revenue {
     padding: 4px 0px;
@@ -204,19 +195,62 @@
 .d-Revenue hr{
     width: 40%;
 }
+
+
 @media (max-width:600px) {
     .row-item-hadeer{
         grid-template-columns: 1fr;
     }
-    .row-item-fieldset{
-        width: 100%;
-        overflow-x: auto;
-        grid-template-columns:17% 95% 95% 95%;
-    }
+  
     .row-item-fieldset-buttom{
         overflow-x: auto;
         grid-template-columns: 95% 95% 95%;
     }
 }
+
+@media (max-width: 600px) {
+    .row-item-fieldset-list {
+        width: 100%;
+        overflow-x: auto;
+    }
+    .form-fieldset-top .row-item .form-control{
+        width: 120px;
+    }
+}
  /*from*/
- 
+ legend {
+    float: unset;
+    width: unset;
+    padding:unset ;
+   margin-bottom: 0.5rem;
+   font-size: calc(1.275rem + 0.3vw);
+    line-height: inherit;
+}
+.form-fieldset{
+   border-color: rgb(192, 192, 192);
+   padding: 6px;
+
+}
+.form-fieldset-top legend {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 0.25fr 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.legend-title {
+            font-weight: bold;
+            padding: 5px;
+            border: 1px dashed rgb(192, 192, 192); /* حدود على الـ span */
+}
+.red-th{
+    background-color: #f44336;
+}
+.gren-th{
+background-color: #8bc34a;
+}
+.tr-footer{
+    background-color: #2196f347;
+}
+
+
